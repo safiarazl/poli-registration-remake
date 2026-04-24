@@ -82,14 +82,14 @@ Has full access to manage Polyclinics, Doctors, Patients, and Medications.
 ### Doctor Account
 Can manage their schedules, view registered patients, and perform examinations.
 *(These accounts are dynamically seeded. Log in with Admin first to see the exact generated email, or use the default generated one below)*:
-- **Email:** `budi@dokter.com`
-- **Password:** `password123`
+- **Email:** `dokter@gmail.com`
+- **Password:** `dokter123`
 
 ### Patient Account
 Can register for a visit to a polyclinic and view their examination history.
 *(These accounts are dynamically seeded. Log in with Admin first to see the exact generated email, or use the default generated one below)*:
-- **Email:** `agus@pasien.com`
-- **Password:** `password123`
+- **Email:** `pasien@gmail.com`
+- **Password:** `pasien123`
 
 ---
 
