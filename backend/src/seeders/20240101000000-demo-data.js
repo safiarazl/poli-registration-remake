@@ -49,8 +49,8 @@ module.exports = {
     await queryInterface.bulkInsert('dokter', [{
       id_akun: idAkunDokter,
       id_poli: poliUmumId,
-      nama: 'Dr. Deo',
-      alamat: 'Pemalang',
+      nama: 'Dr. Safiar',
+      alamat: 'Demak',
       no_hp: '088812345678',
       createdAt: new Date(),
       updatedAt: new Date()
@@ -73,8 +73,8 @@ module.exports = {
 
     await queryInterface.bulkInsert('pasien', [{
       id_akun: idAkunPasien,
-      nama: 'Safiar',
-      alamat: 'Demak',
+      nama: 'Hafis',
+      alamat: 'Ungaran',
       no_ktp: '33211111111111',
       no_hp: '081234567890',
       no_rm: '202401-1',
