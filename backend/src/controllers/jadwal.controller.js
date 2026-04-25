@@ -1,12 +1,17 @@
+const { where } = require('sequelize');
 const { JadwalPeriksa, Dokter, Poli } = require('../models');
 
 exports.getAll = async (req, res, next) => {
   try {
+    // get current doctor logged in
+    const dokter = await Dokter.findOne({ where: { id_akun: req.user.id } });
+
     const jadwals = await JadwalPeriksa.findAll({
       include: [{
         model: Dokter,
         as: 'dokter',
-        include: [{ model: Poli, as: 'poli' }]
+        include: [{ model: Poli, as: 'poli' }],
+        where: dokter ? { id: dokter.id } : undefined // If doctor is logged in, filter jadwals to only their own
       }]
     });
     res.json(jadwals);
